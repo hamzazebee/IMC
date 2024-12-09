@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  -->
+    <!--LinearLayout container bch n7otou fih les element bel V ou H  -->
+    <!-- android:layout_width traka7 l toul mtaa l conteneur -->
+    <!-- et android:layout_height l3orth mtaa conteneur -->
+    <!-- android:orientation="vertical" est ce que bch tt7at bel 3orth  -->
+    <!-- android:padding="15dp" l mou7it mtaa conteneur 9adh binou w bin l cadre lbarani -->
+    <!-- tools:context=".MainActivity" maaneha l mise en page  hetha mtaa fichier MainActivity -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <!-- TextView bch naffichi l message  -->
+    <!-- android:layout_width,height,gravity
+     bch nraka7 largeur,l'hauteur w t7ot text f centre mtaa lcontainer-->
+    <!-- android:hint lmessage eli bch naffichih -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:hint="Calcule de votre IMC" />
+    <!-- EditText blaset el text win bch yekteb l poids-->
+    <!-- android:id l id li bch yrbet binou w bin lmethod f fichier java-->
+    <!-- android:layout_width,layout_height,gravety="centre"
+     traka7  largeur ,hauteur w thotou f centre -->
+    <!-- android:hint="Votre Poids(kg)" lmessage libch yothorlou fost leditext bxh yaarf chyekteb -->
+    <EditText
+        android:id="@+id/activity_main_poids_input"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:gravity="center"
+        android:hint="Votre Poids(kg)" />
+    <!-- EditText blaset el text win bch yekteb l taille-->
+    <!-- android:id l id li bch yrbet binou w bin lmethod f fichier java-->
+    <!-- android:layout_width,layout_height,gravety="centre"
+     traka7  largeur ,hauteur w thotou f centre -->
+    <!-- android:hint="Votre Taille(m)" lmessage libch yothorlou fost leditext bxh yaarf chyekteb -->
+    <EditText
+        android:id="@+id/activity_main_taille_input"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:hint="Votre Taille(m)" />
+    <!-- Bouton li bch clicki 3lih bch y7seb-->
+    <!-- android:id naamloulou id bch norbtou design bel method fel fichier java -->
+    <!-- android:layout_width,la hauteur toul  w el  3orth mtaa l boutton -->
+    <!-- android:layout_height="wrap_content" ajuste la hauteur en fonction du contenu -->
+    <!-- android:hint="Calculer" affiche le texte "Calculer" sur le bouton -->
+    <Button
+        android:id="@+id/activity_main_calculer_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Calculer" />
+    <!-- TextView affichage mtaa resultat -->
+    <!-- android:id="@+id/activity_main_result_text" id bch norbtou bih bin method w design-->
+    <!-- android:text="" initialih feragh baad yt3amer fel code java-->
+    <TextView
+        android:id="@+id/activity_main_result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+</LinearLayout>

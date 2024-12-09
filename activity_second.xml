@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LineearLayout  conteneur  bch n7otou fih les element w nathmouhom V ou H-->
+<!--android:layout_width,height,orientation
+ nathamna l toul w 3orth w hatineha bel toul   -->
+<!-- padding lescpace mabin lcadre w element -->
+<!--tools:context= maaneha desgin tebaa lfechier atheka(SecondActivity)-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".SecondActivity">
+    <!-- TextView bch nektbou fehaa l message de resulta -->
+    <!-- android:id naamlou id bch norbtou desgin bel method-->
+    <!-- layout_width,height hatina l toul w 3orth l element -->
+    <!--android:text message initial fergh mbaad ytaaba bel methad fel code java  -->
+    <TextView
+        android:id="@+id/activity_second_imc_text"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="" />
+</LinearLayout>
